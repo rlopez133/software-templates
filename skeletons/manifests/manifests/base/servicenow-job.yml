@@ -1,0 +1,9 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: servicenow
+spec:
+  connection_secret: aapaccess
+  job_template_name: Service Now Incident Creation
+  inventory: Demo Inventory
